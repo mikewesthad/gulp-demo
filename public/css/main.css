@@ -1,0 +1,1 @@
+body{font:2em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;color:#333}#rotating-box{width:500px;height:500px;background-color:red;transition:all 0.2s ease}#rotating-box:hover{background-color:blue;-webkit-transform:rotate(180deg);transform:rotate(180deg)}

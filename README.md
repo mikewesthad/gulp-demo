@@ -1,3 +1,9 @@
-# gulp-demo
+gulp-demo
+=========
 
-test2
+WORK-IN-PROGESS!
+
+Resources
+---------
+
+1.	[Gulp Cheatsheet](https://github.com/osscafe/gulp-cheatsheet)

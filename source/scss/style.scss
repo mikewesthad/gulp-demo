@@ -1,0 +1,56 @@
+@import "buttons";
+
+$font-stack: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$primary-color: #333;
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 2em $font-stack;
+	color: $primary-color;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#rotating-wrap {
+	font-size: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 900px;
+}
+
+#rotating-box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	background-color: red;
+	transition: all 1s ease;
+}
+
+#rotating-box:hover {
+	background-color: blue;
+	transform: rotate(360deg);
+}
+
+.btn {	
+	width: 200px;
+	height: 100px;
+	color: white;
+	line-height: 100px;
+}

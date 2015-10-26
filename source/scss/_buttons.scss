@@ -1,0 +1,40 @@
+
+// http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
+$btn-style-1: #556270;
+$btn-style-2: #4ECDC4;
+$btn-style-3: #C7F464;
+$btn-style-4: #FF6B6B;
+$btn-style-5: #C44D58;
+
+@mixin button-bg($background-color) {
+	background-color: $background-color;
+	&:hover {
+		background-color: darken($background-color, 10%);
+		transition: all 0.25s ease;
+	}
+	&:active {
+		background-color: darken($background-color, 25%);
+	}
+}
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn-style-1 {
+	@include button-bg($btn-style-1);
+}
+.btn-style-2 {
+	@include button-bg($btn-style-2);
+}
+.btn-style-3 {
+	@include button-bg($btn-style-3);
+}
+.btn-style-4 {
+	@include button-bg($btn-style-4);
+}
+.btn-style-5 {
+	@include button-bg($btn-style-5);
+}
